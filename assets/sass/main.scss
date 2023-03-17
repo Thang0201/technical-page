@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  text-rendering: optimizeSpeed;
+}
+
+body {
+  font-size: 1.6rem;
+  min-height: 100vh;
+  color: rgba(22, 24, 35, 1);
+  direction: ltr;
+  overscroll-behavior: contain;
+  -webkit-font-smoothing: antialiased;
+}
+
+.container {
+  min-width: 290px;
+  color: #4d4e53;
+  background-color: #fff;
+  line-height: 1.5;
+}
+
+nav {
+  position: fixed;
+  min-width: 290px;
+  top: 0px;
+  left: 0px;
+  width: 300px;
+  height: 100%;
+  border-right: solid;
+  border-color: rgba(0, 22, 22, 0.4);
+
+  ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+
+    li {
+      color: #4d4e53;
+      border-top: 1px solid;
+      list-style: none;
+      position: relative;
+      width: 100%;
+    }
+
+    a {
+      display: block;
+      padding: 10px 30px;
+      color: #4d4e53;
+      text-decoration: none;
+      cursor: pointer;
+    }
+  }
+}
+
+header {
+  color: black;
+  margin: 10px;
+  text-align: center;
+  font-size: 1.8em;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 310px;
+  padding: 20px;
+  margin-bottom: 110px;
+
+  header {
+    text-align-last: left;
+    margin: 0;
+  }
+
+  p {
+    margin: 15.36px 0;
+  }
+
+  ul {
+    padding-left: 4rem;
+
+    li {
+      margin: 15px 0 0 20px;
+      text-align-last: left;
+    }
+  }
+
+  section {
+    article {
+      color: #4d4e53;
+      margin: 15px;
+      font-size: 0.96em;
+    }
+
+    code {
+      display: block;
+      text-align: left;
+      white-space: pre-line;
+      position: relative;
+      word-break: normal;
+      word-wrap: normal;
+      line-height: 2;
+      background-color: #f7f7f7;
+      padding: 15px;
+      margin: 10px;
+      border-radius: 5px;
+    }
+  }
+}
+
+@media (max-width: 815px) {
+  #navbar {
+    background-color: white;
+    position: absolute;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-height: 275px;
+    border: none;
+    z-index: 1;
+    border-bottom: 2px solid;
+
+    ul {
+      border: 1px solid;
+      height: 207px;
+    }
+  }
+
+  #main-doc {
+    position: relative;
+    margin-left: 0px;
+    margin-top: 270px;
+  }
+}
